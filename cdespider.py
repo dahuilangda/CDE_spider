@@ -30,7 +30,7 @@ for step, c in enumerate(context):
         tmp_list.append(tmp_dict)
         tmp_dict = {}
 df = df.append(tmp_list)
-df.to_csv('cde_2020.csv', index=False)
+#df.to_csv('cde_2020.csv', index=False)
 driver.close()
 
 total_page_num = int(soup.find(id='pageNumber').get_text().split()[-2])
